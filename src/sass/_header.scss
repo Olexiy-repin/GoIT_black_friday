@@ -1,0 +1,46 @@
+.header {
+  padding-top: 2.4rem;
+  background-color: #000;
+  .row:first-of-type {
+    margin-bottom: 3.9rem;
+  }
+  .row:last-of-type {
+    [class*=col-]:first-of-type {
+      margin-bottom: 3.3rem;
+    }
+  }
+}
+
+.header__logo {
+  display: block;
+  margin: auto;
+  width: 32%;
+}
+
+.header__title {
+  font-family: RobotoT;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.header__subtitle {
+  font-family: RobotoT;
+  color: #fff;
+  font-size: 1.875rem;
+  text-align: center;
+  .bold {
+    color: #ff6c00;
+  }
+}
+
+.bold {
+  font-family: RobotoB;
+}
+
+.header__img {
+  display: block;
+  width: 66%;
+  margin: auto;
+}

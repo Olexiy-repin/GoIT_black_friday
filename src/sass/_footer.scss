@@ -1,0 +1,38 @@
+.footer {
+  background-color: #000;
+  background-image: url("img/footer/bg.png");
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-top: 2.8rem;
+  padding-bottom: 8.1rem;
+}
+
+.footer__btn-container {
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+.footer__btn {
+  font-family: RobotoR;
+  font-size: pxToRem(18px);
+  background: linear-gradient(45deg, #ffb41b, #fb193c 100%); /* w3c */
+  display: inline-block;
+  margin: auto;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: pxToRem(240px);
+  padding: .8rem 0;
+  letter-spacing: .7px;
+}
+
+.footer__text {
+  font-family: RobotoB;
+  font-size: 1rem;
+  color: #00bcd4;
+  text-align: center;
+  span {
+    color: #ff6c00;
+  }
+}
