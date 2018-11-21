@@ -18,7 +18,7 @@
   font-size: pxToRem(70px);
   color: #fff;
   text-transform: uppercase;
-  width: 211px;
+  width: pxToRem(211px);
   margin: auto;
   padding: 1.6rem 0 1.9rem 0;
   text-align: center;
@@ -37,8 +37,8 @@
   &::before {
     display: block;
     content: "";
-    width: 228px;
-    height: 185px;
+    width: pxToRem(228px);
+    height: pxToRem(185px);
     position: absolute;
     top: 0;
     left: 0;
@@ -48,8 +48,8 @@
   &::after {
     display: block;
     content: "";
-    width: 230px;
-    height: 183px;
+    width: pxToRem(230px);
+    height: pxToRem(183px);
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -71,5 +71,92 @@
   margin-bottom: 1.6rem;
   &:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-top: 4.2rem;
+  }
+
+  .main__title {
+    font-size: pxToRem(30px);
+    letter-spacing: .3px;
+    margin-bottom: 3.4rem;
+  }
+
+  .plashka {
+    width: pxToRem(580px);
+    margin-bottom: 4.4rem;
+    padding: 0.8rem 0 0 0;
+    height: pxToRem(161px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      display: inline-block;
+    }
+    .plashka__text {
+      font-size: pxToRem(60px);
+      margin-left: 1rem;
+    }
+
+    .plashka__number {
+      font-size: pxToRem(100px);
+    }
+    &::before {
+      width: pxToRem(612px);
+      height: pxToRem(190px);
+    }
+    &::after {
+      width: pxToRem(610px);
+    }
+  }
+
+  .main__paragraph {
+    font-size: pxToRem(22px);
+    width: 38.7rem;
+    line-height: pxToRem(34px);
+    letter-spacing: .5px;
+    margin-bottom: 2.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    padding-top: 5.6rem;
+  }
+
+  .main__title {
+    font-size: pxToRem(40px);
+    text-align: left;
+    margin-bottom: 4.8rem;
+  }
+
+  .plashka {
+    width: pxToRem(966px);
+    height: pxToRem(250px);
+    margin-bottom: 6.6rem;
+    .plashka__text {
+      font-size: pxToRem(110px);
+    }
+    .plashka__number {
+      font-size: pxToRem(150px);
+    }
+    &::before {
+      width: 62.55rem;
+      height: 17.575rem;
+    }
+    &::after {
+      width: 62.325rem;
+      height: pxToRem(279px);
+    }
+  }
+
+  .main__paragraph {
+    font-size: pxToRem(30px);
+    width: auto;
+    line-height: pxToRem(46px);
+    margin-bottom: 2.7rem;
   }
 }

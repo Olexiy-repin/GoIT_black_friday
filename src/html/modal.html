@@ -1,0 +1,52 @@
+<div id="myModal" class="white-popup mfp-hide">
+<div class="modal-content">
+  <div class="form-container">
+    <form class="modal-form" action="#" method="post">
+      <h2 class="modal-form__title">забронировать цену</h2>
+      <div class="form-modal__input-container">
+        <label class="form-modal__label">
+          Имя:
+          <input id="email" type="text" name="email">
+        </label>
+        <label class="form-modal__label">
+          Телефон:
+          <input id="tel" type="tel" name="custom_mobile_phone">
+        </label>
+        <input type="checkbox" class="checkbox" id="checkbox" checked>
+        <label for="checkbox">Принимаю договор оферты и <br> даю согласие на обработку моих <br> персональных данных</label>
+      </div>
+
+      <!-- crm input -->
+      <input type="hidden" class="registrationType" name="registrationType" value="default_registration">
+      <input type="hidden" class="orderType" name="orderType" value="order-no">
+      <input type="hidden" class="number_of_button" name="number_of_button" value="1">
+      <input type="hidden" name="utm_source" value="">
+      <input type="hidden" name="utm_campaign" value="">
+      <input type="hidden" name="utm_medium" value="">
+      <input type="hidden" name="utm_term" value="">
+      <input type="hidden" name="utm_content" value="">
+      <input type="hidden" name="lead_price" class="lead_price" value="">
+      <input type="hidden" name="click_id" value="">
+      <input type="hidden" name="affiliate_id" value="">
+      <input type="hidden" name="page_url" value="">
+      <input type="hidden" name="ref" value="">
+      <input type="hidden" name="lend" value="Webinar_Front-End/FullStack">
+      <input type="hidden" name="ip_address" value="">
+      <input type="hidden" name="city" value="">
+      <input type="hidden" class="gclid_field" name="gclid_field" value="">
+      <!-- getrespons -->
+      <input type="hidden" name="campaign_token" value="n3rWu" />
+		  <!-- Страница благодарности (по желанию) -->
+			<input type="hidden" name="thankyou_url" value="http://fe.webinar.goit.ua/success/"/>
+			<!-- Добавить подписчика в цикл на определенный день (по желанию) -->
+			<input type="hidden" name="start_day" value="0" />
+			<!-- Forward form data to your page (optional) -->
+			<input type="hidden" name="forward_data" value="post" />
+
+      <div class="submit-wrap">
+          <button class="modal-form__btn" type="submit">Начать обучение на курсе</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
